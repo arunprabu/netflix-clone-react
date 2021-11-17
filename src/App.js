@@ -3,6 +3,7 @@ import './App.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import LatestMovie from './components/LatestMovie';
 
 // comp defn 
 // have the layout in this comp
@@ -19,6 +20,10 @@ function App() {
         <p className="lead">Pay and watch movies, cancel any time!</p>
         <a className="btn btn-lg btn-danger" href="/" role="button">Signup Now &raquo;</a>
       </div>
+
+      <br />
+      <h2>Latest Movies | Props Demo</h2>
+      <LatestMovie />
     </main>
 
     <Footer></Footer>
