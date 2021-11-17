@@ -4,10 +4,10 @@ import React from 'react';
 
 var Footer = function(){
   return(
-    <div>
-      <hr></hr>
+    <footer>
+      <hr />
       <p>Copyright 2021 - Arun</p>
-    </div>
+    </footer>
   )
 }
 
