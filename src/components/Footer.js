@@ -1,12 +1,18 @@
 // Fn comp with Anonymous Function 
 
 import React from 'react';
+import Menu from './Menu';
 
-var Footer = function(){
+const Footer = function(){
+
+  // ideal place for the data to be kept 
+  const year = 2021; // read-only variable
+
   return(
-    <footer>
+    <footer className="text-center">
       <hr />
-      <p>Copyright 2021 - Arun</p>
+      <Menu />
+      <p>Copyright {year} - Arun</p>
     </footer>
   )
 }
