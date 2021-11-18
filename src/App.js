@@ -5,6 +5,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import LatestMovie from './components/LatestMovie';
 import Watchlist from './containers/Watchlist';
+import TrendingShows from './containers/TrendingShows';
+import Subscription from './components/Subscription/Subscription';
 
 // comp defn 
 // have the layout in this comp
@@ -17,7 +19,7 @@ function App() {
 
     <main className="mt-5 container">
       <div className="bg-light p-5 rounded">
-        <h1>Welcome to Netflix App</h1>
+        <h1 className="greenText">Welcome to Netflix App</h1>
         <p className="lead">Pay and watch movies, cancel any time!</p>
         <a className="btn btn-lg btn-danger" href="/" role="button">Signup Now &raquo;</a>
       </div>
@@ -37,6 +39,12 @@ function App() {
 
       <h2>Manage Watchlist | Class Comp, States and Events </h2>
       <Watchlist />
+
+      <h2>Trending Shows | Class Comp, Conditional Rendering, Lists, Keys </h2>
+      <TrendingShows time="this week!"/>
+
+      <h2>Subscribers | Styling Demo</h2>
+      <Subscription />
 
     </main>
 
