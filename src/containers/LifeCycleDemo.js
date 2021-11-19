@@ -54,7 +54,8 @@ class LifeCycleDemo extends Component {
   }
 
   render() {
-
+    // Don't ever change the state using setState() here
+    // if you do so, it will re-render infinitely.
 
     console.log('===========2 & 5. Inside Render=============');
 
