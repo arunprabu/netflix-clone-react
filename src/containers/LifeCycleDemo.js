@@ -54,6 +54,8 @@ class LifeCycleDemo extends Component {
   }
 
   render() {
+
+
     console.log('===========2 & 5. Inside Render=============');
 
     return (
