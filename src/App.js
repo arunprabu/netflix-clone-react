@@ -9,6 +9,8 @@ import TrendingShows from './containers/TrendingShows';
 import Subscription from './components/Subscription/Subscription';
 import MyProfile from './containers/MyProfile';
 import LifeCycleDemo from './containers/LifeCycleDemo';
+import WithLastLogin from './hoc/WithLastLogin';
+import SubscribersList from './containers/SubscribersList';
 
 // comp defn 
 // have the layout in this comp
@@ -53,6 +55,21 @@ function App() {
 
       <h2>Lifecyle Hook | Demo</h2>
       <LifeCycleDemo />
+
+      <hr />
+      <h2>Subscribers List | AJAX Call Demo</h2>
+      <SubscribersList />
+
+      <hr />
+      <h2>Last Login | HOC</h2>
+      <WithLastLogin>
+        <p>Last Login: 18/Nov/2021</p>
+        <p>Updated at: 6 PM</p>
+      </WithLastLogin>
+
+      <WithLastLogin>
+        <p>Do you want to Signout?</p>
+      </WithLastLogin>
 
     </main>
 

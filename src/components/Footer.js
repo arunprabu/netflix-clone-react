@@ -9,11 +9,14 @@ const Footer = function(){
   const year = 2021; // read-only variable
 
   return(
-    <footer className="text-center">
-      <hr />
-      <Menu />
-      <p className="redText">Copyright {year} - Arun</p>
-    </footer>
+    <>
+      <footer className="text-center">
+        <hr />
+        <Menu />
+        <p className="redText">Copyright {year} - Arun</p>
+      </footer>
+      <p className="text-center">Happily made during Nov 2021!</p>
+    </>
   )
 }
 

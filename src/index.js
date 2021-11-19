@@ -1,5 +1,5 @@
 // node module imports
-import React from 'react'; // importing official react core library 
+import React, { StrictMode } from 'react'; // importing official react core library 
 import ReactDOM from 'react-dom'; // importing dom rendering package
 
 // custom imports
@@ -9,7 +9,9 @@ import reportWebVitals from './reportWebVitals';
 
 // React Dom should render a component -- AppComponent
 ReactDOM.render(
-  <App/>
+  <StrictMode>
+    <App/>
+  </StrictMode>
   ,
   document.getElementById("root")
 );
