@@ -7,6 +7,8 @@ import LatestMovie from './components/LatestMovie';
 import Watchlist from './containers/Watchlist';
 import TrendingShows from './containers/TrendingShows';
 import Subscription from './components/Subscription/Subscription';
+import MyProfile from './containers/MyProfile';
+import LifeCycleDemo from './containers/LifeCycleDemo';
 
 // comp defn 
 // have the layout in this comp
@@ -45,6 +47,12 @@ function App() {
 
       <h2>Subscribers | Styling Demo</h2>
       <Subscription />
+
+      <h2>My Profile | Two Way Binding Demo</h2>
+      <MyProfile />
+
+      <h2>Lifecyle Hook | Demo</h2>
+      <LifeCycleDemo />
 
     </main>
 
